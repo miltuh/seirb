@@ -9,6 +9,7 @@ if(isset($_POST['aceptar'])){
   $data['titulo_empleo'] = $_POST['titulo_empleo'];
   $data['empresa'] = $_POST['empresa'];
   $data['categoria_id'] = $_POST['categoria'];
+  $data['user_id'] = $_POST['user_id'];
   $data['descripcion'] = $_POST['descripcion'];
   $data['lugar'] = $_POST['lugar'];
   $data['salario'] = $_POST['salario'];

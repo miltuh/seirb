@@ -71,14 +71,15 @@
         //crear trabajo
         public function create($data){
           //consulta para insertar
-          $this->db->query("INSERT INTO empleos (categoria_id, titulo_empleo,
+          $this->db->query("INSERT INTO empleos (categoria_id, user_id, titulo_empleo,
           empresa, descripcion, lugar, salario, contacto_usuario,
           contacto_email)
-        VALUES (:categoria_id, :titulo_empleo, :empresa, :descripcion,
+        VALUES (:categoria_id, :user_id, :titulo_empleo, :empresa, :descripcion,
         :lugar, :salario, :contacto_usuario, :contacto_email)");
         //bind data
         $this->db->bind(':categoria_id', $data['categoria_id']);
         $this->db->bind(':titulo_empleo', $data['titulo_empleo']);
+        $this->db->bind(':user_id', $data['user_id']);
         $this->db->bind(':empresa', $data['empresa']);
         $this->db->bind(':descripcion', $data['descripcion']);
         $this->db->bind(':lugar', $data['lugar']);
@@ -128,5 +129,7 @@
       $this->db->bind(':contacto_usuario', $data['contacto_usuario']);
       $this->db->bind(':contacto_email', $data['contacto_email']);
       }
+
+
 
   }

@@ -11,14 +11,17 @@
     <br><br>
     <a style="color:pink;" href="index.php">Inicio</a>
     <br><br>
+
+  <?php if ($job->user_id == $userId) { ?>
     <div class="well">
         <a href="edit.php?id=<?php echo $job->id ?>" class="btn btn-default">Editar</a>
-
         <form style="display:inline" action="job.php" method="post">
           <input type="hidden" name="del_id" value="<?php echo $job->id; ?>">
           <input type="submit" class="btn btn-danger" value="Eliminar">
         </form>
     </div>
     <br>
+  <?php } ?>
+
 
 <?php include 'inc/footer.php'; ?>
