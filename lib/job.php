@@ -119,7 +119,7 @@
         contacto_usuario = :contacto_usuario,
         contacto_email = :contacto_email
         WHERE id = $id");
-      //bind data
+        //bind data
       $this->db->bind(':categoria_id', $data['categoria_id']);
       $this->db->bind(':titulo_empleo', $data['titulo_empleo']);
       $this->db->bind(':empresa', $data['empresa']);
@@ -128,6 +128,13 @@
       $this->db->bind(':salario', $data['salario']);
       $this->db->bind(':contacto_usuario', $data['contacto_usuario']);
       $this->db->bind(':contacto_email', $data['contacto_email']);
+      //ejecturar
+      if($this->db->execute()){
+        return true;
+      } else {
+        return false;
+      }
+
       }
 
 

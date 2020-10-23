@@ -3,7 +3,6 @@
 <?php
 $job = new Job;
 
-
 if(isset($_POST['del_id'])){
   $del_id = $_POST['del_id'];
   if($job->delete($del_id)){
@@ -20,6 +19,6 @@ $job_id = isset($_GET['id']) ? $_GET['id'] : null;
 
 $template->job = $job->getJob($job_id);
 
-$template->userId = 1;
+$template->userId = $_SESSION['user_id'];
 
 echo $template;

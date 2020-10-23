@@ -25,6 +25,7 @@ else
 {
   $reg = " insert into user(first_name, last_name, email , password) values('$first_name', '$last_name','$email','$password')";
   mysqli_query($con, $reg);
+  $_SESSION['user_id'] = $user['id'];
   echo file_get_contents("../templates/registered.php");
 }
 

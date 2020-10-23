@@ -1,6 +1,6 @@
 <?php include 'inc/header.php' ?>
     <h2 class="page-header">Actualizar Empleo</h2>
-    <form method="post" action="edit.php?id<<?php echo $job->id; ?>">
+    <form method="post" action="edit.php?id=<?php echo $job->id; ?>">
       <div class="form-group">
           <label>Categoría</label>
           <select type="text" class="form-control" name="categoria">

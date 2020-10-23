@@ -5,6 +5,7 @@ $job = new Job;
 
 $job_id = isset($_GET['id']) ? $_GET['id'] : null;
 
+
 if(isset($_POST['aceptar'])){
   //crear un array de datos
   $data = array();
@@ -23,6 +24,7 @@ if(isset($_POST['aceptar'])){
     redirect('index.php', 'Ha habido un problema al actualizar tu empleo.','error');
   }
 }
+
 
 $template = new Template('templates/job-edit.php');
 

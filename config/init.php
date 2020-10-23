@@ -1,5 +1,5 @@
 <?php
-//comenzar sesion 
+//comenzar sesion
 session_start();
 
 //archivo config

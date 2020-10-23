@@ -6,7 +6,6 @@
           <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
           <link rel="stylesheet" href="https://getbootstrap.com/docs/3.4/assets/css/ie10-viewport-bug-workaround.css">
           <link rel="stylesheet" href="https://getbootstrap.com/docs/3.4/examples/jumbotron-narrow/jumbotron-narrow.css">
-          <link rel="icon" type="image" href="../templates/favicon.png">
         </head>
         <body>
           <div class="container">
